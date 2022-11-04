@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+    <style>
+      .headerone {
+        font-size: 30px;
+        color: #00aa11;
+        font-weight: bold;
+      }
+      .headertwo {
+        font-size: 16px;
+        color: #00aa11;
+        font-weight: bold;
+      }
+      .menu {
+        position: sticky;
+        top: 0;
+        background-color: #00aa11;
+        padding: 10px 0px;
+        color: azure;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .menu a {
+        float: left;
+        color: white;
+        text-align: center;
+        margin: 10px;
+        padding: 0px 12px;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: #066432;
+      }
+      #footersection {
+        width: 100%;
+        bottom: 0px;
+        background-color: #00aa11;
+        color: aliceblue;
+        position: absolute;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .body_section {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  Header section -->
+    <header>
+      <div class="headerone">Furniture Title</div>
+      <div class="headertwo">All the Furniture are found here.</div>
+    </header>
+
+    <!-- Menu Navigation Bar -->
+    <nav class="menu">
+      <a href="#all">All</a>
+      <a href="#todayDeals">Today's Deals </a>
+      <a href="#customerServices">Customer Service</a>
+      <a href="#sell">Sell</a>
+      <div class="returnandlogin">
+        <a href="#login">Login</a><a href="return&orders">Returns & Orders</a>
+      </div>
+    </nav>
+    <!-- Body section -->
+    <main class="body_section">
+      <section id="content"><h3>Content section</h3></section>
+    </main>
+    <!-- Footer section -->
+    <footer id="footersection">Footer section</footer>
+  </body>
+</html>
