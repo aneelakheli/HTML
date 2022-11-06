@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Layouts</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header {
+        padding: 18px;
+      }
+      .menubar {
+        background-color: rgb(39, 108, 168);
+        display: block;
+        padding: 10px 0px;
+      }
+      .menubar a {
+        text-decoration: none;
+        padding: 10px 14px;
+        color: azure;
+      }
+      .menubar > a:hover {
+        background-color: rgb(21, 107, 107);
+      }
+      .titlesection {
+        float: left;
+        width: 35%;
+        height: 300px;
+        background-color: beige;
+        padding: 20px;
+      }
+      nav > ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 69%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the fssooter */
+      footer {
+        background-color: rgb(39, 108, 168);
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><div class="header">Float Layouts</div></header>
+    <nav class="menubar">
+      <a href="#Home">Home</a><a href="#Stories">Stories</a
+      ><a href="#Other">Other</a><a href="#About us">About US</a>
+    </nav>
+    <section class="allsection">
+      <nav class="titlesection">
+        <ul>
+          <li><a href="#Chapter-1">Chapter-1</a></li>
+          <li><a href="#Chapter-2">Chapter-2</a></li>
+          <li><a href="#Chapter-3">Chapter-3</a></li>
+          <li><a href="#Chapter-4">Chapter-4</a></li>
+        </ul>
+      </nav>
+      <article class="titledescription">
+        <h1>Chapter-1</h1>
+        <p>
+          It is a wave to organize the data in some way so we can do the
+          operations on these data in effective way. Data structure may be
+          organized in many different ways. The logical or mathematical model of
+          a particular organization of data is called data structure. Choice of
+          data model depends on two considerations. It must be rich enough in
+          structure to mirror the actual relationship of the data in the real
+          world. The structure should be simple enough that one can effectively
+          process the data when necessary.
+        </p>
+        <p>
+          Add the unique symbol # at the end of array post fix. (ii) Scan the
+          symbol of array post fix one by one from left to right. (iii) If
+          symbol is operand, two push in to stack. (iv) If symbol is operator,
+          then pop last two element of stack and evaluate it as [top- 1]
+          operator [top] & push it to stack. (v) Do the same process until ‘#’
+          comes in scanning. (vi) Pop the element of stack which will be value
+          of evaluation of post fix arithmetic expression.
+        </p>
+      </article>
+    </section>
+    <footer>Footers</footer>
+  </body>
+</html>
